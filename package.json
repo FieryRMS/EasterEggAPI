@@ -1,0 +1,22 @@
+{
+  "name": "eastereggapi-2.0",
+  "version": "1.0.0",
+  "description": "easter egg api joss",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "env-cmd nodemon -w app -w *.js -w .env server.js",
+    "init": "npm config set script-shell powershell",
+    "start": "nodemon -w *.js -w .env -x \"./node_modules/.bin/env-cmd node server.js\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^8.6.8"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "author": "Ray",
+  "license": "ISC"
+}
